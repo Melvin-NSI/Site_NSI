@@ -60,3 +60,14 @@ img {
 .btn:hover {
     background: #006400;
 }
+
+a {
+    color: #FFD700; /* Gold color for contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+  
+a:hover {
+    color: #FF4500; /* Orange color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
