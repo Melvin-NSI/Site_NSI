@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://wallpapercave.com/wp/wp2563382.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.modpack {
+    background: #654321;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 3px solid #8B4513;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 3px solid #D2B48C;
+}
+
+.btn {
+    display: inline-block;
+    background: #228B22;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #006400;
+}
+
+.btn:hover {
+    background: #006400;
+}
