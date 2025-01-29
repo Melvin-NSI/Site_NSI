@@ -6,37 +6,28 @@ body {
     background-size: cover;
     color: #fff;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
- body {
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; /* Couleur d'arrière-plan principale */
-        }
-
-        .container {
-            width: 80%; /* La largeur du contenu principal */
-            margin: 0 auto; /* Centrer le contenu */
-            background-color: #ffffff; /* L'arrière-plan du contenu principal */
-            box-sizing: border-box;
-        }
-
-        /* Ajouter des bandes noires sur les côtés */
-        .black-bands {
-            background-color: black;
-            width: 100%;
-            height: 100vh; /* Utilise toute la hauteur de la fenêtre */
-            position: fixed;
-            left: 0;
-            top: 0;
-            z-index: -1; /* Place les bandes noires derrière le contenu */
-        }
+.black-bands {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
 
 .container {
     width: 80%;
-    margin: auto;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
 }
 
 .modpack {
