@@ -2,72 +2,97 @@
 
 body {
     font-family: 'Press Start 2P', cursive;
-    background: url('https://wallpapercave.com/wp/wp2563382.png') no-repeat center center fixed;
+    background: url('images (1).jpg') no-repeat center fixed;
     background-size: cover;
     color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-}
-
-.black-bands {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
 }
 
 .container {
     width: 80%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-sizing: border-box;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border: 4px solid #FFD700;
 }
 
 .modpack {
-    background: #654321;
-    padding: 20px;
-    margin: 20px 0;
+    position: relative;
+    padding: 40px 20px;
+    margin: 30px 0;
     border-radius: 10px;
-    border: 3px solid #8B4513;
+    border: 4px solid #8B4513;
+    background: url('OIP.jpg') no-repeat center;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.modpack::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: url('https://www.minecrafttexturepacks.com/wp-content/uploads/2022/04/grass_block.png') no-repeat center;
+    background-size: cover;
+    border-bottom: 4px solid #2e7031;
+}
+
+.modpack:hover {
+    transform: scale(1.05);
+    box-shadow: inset 0 5px 0px #A0522D, inset 0 -5px 0px #4B2E15, 0px 8px 15px rgba(0, 0, 0, 0.7);
 }
 
 img {
     width: 100%;
     max-width: 400px;
-    border-radius: 10px;
-    border: 3px solid #D2B48C;
+    border-radius: 12px;
+    border: 4px solid #D2B48C;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.08);
 }
 
 .btn {
     display: inline-block;
-    background: #228B22;
+    background: linear-gradient(145deg, #228B22, #006400);
     color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 12px 25px;
+    margin-top: 15px;
     text-decoration: none;
-    border-radius: 5px;
-    border: 3px solid #006400;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 4px solid #006400;
+    box-shadow: 0 4px 0px #004d00;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
     background: #006400;
+    box-shadow: 0 6px 0px #004d00;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
 }
 
 a {
-    color: #FFD700; /* Gold color for contrast */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text bold */
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
 }
-  
+
 a:hover {
-    color: #FF4500; /* Orange color on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: #FF4500;
+    text-decoration: underline;
 }
