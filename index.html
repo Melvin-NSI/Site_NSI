@@ -6,10 +6,33 @@
         <link rel="stylesheet" href="styles modpack.css">
     </head>
     <body>
-        <div class="black-bands"></div>
-        <h1>Votre assistant Minecraft</h1>
-        <a href="/Site_NSI/modpack.html">ModPacks Recomandés</a><br><br>
-        <a href="/Site_NSI/astuces.html">Astuces de survie</a><br><br>
-        <a href="https://minecraft.wiki">Wiki Minecraft</a>
+        <header>
+            <h1>Votre assistant Minecraft</h1>
+            <nav>
+                <ul>
+                    <li><a href="/Site_NSI/modpack.html">ModPacks Recommandés</a></li>
+                    <li><a href="/Site_NSI/astuces.html">Astuces de survie</a></li>
+                    <li><a href="https://minecraft.wiki">Wiki Minecraft</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="presentation">
+            <h2>Bienvenue sur l'assistant Minecraft</h2>
+            <p>Découvrez les meilleurs ModPacks, astuces et ressources pour améliorer votre expérience de jeu.</p>
+        </section>
+        
+        <button id="back-to-top">⬆ Retour en haut</button>
+        
+        <footer>
+            <p>&copy; 2024 Assistant Minecraft | <a href="mailto:contact@minecraft-assistant.com">Contact</a></p>
+        </footer>
+        
+        <script>
+            // Script pour faire remonter la page
+            document.getElementById("back-to-top").addEventListener("click", function() {
+                window.scrollTo({top: 0, behavior: "smooth"});
+            });
+        </script>
     </body>
 </html>
