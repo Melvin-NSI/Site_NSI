@@ -33,3 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleThemeBtn.innerText = document.body.classList.contains("dark-mode") ? "☀ Mode Clair" : "🌙 Mode Sombre";
     });
 });
+
+// Lien du script dans le fichier HTML
+// <script src="script.js"></script>
