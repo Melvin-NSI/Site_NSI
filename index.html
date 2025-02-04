@@ -2,25 +2,34 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assistant Minecraft</title>
-        <link rel="stylesheet" href="styles modpack.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="design.css">
     </head>
     <body>
-        <header>
-            <h1>Votre assistant Minecraft</h1>
-            <nav>
-                <ul>
-                    <li><a href="/Site_NSI/modpack.html">ModPacks Recommandés</a></li>
-                    <li><a href="/Site_NSI/astuces.html">Astuces de survie</a></li>
-                    <li><a href="https://minecraft.wiki">Wiki Minecraft</a></li>
-                </ul>
-            </nav>
+        <header class="hero">
+            <div class="overlay">
+                <h1>Votre Assistant Minecraft</h1>
+                <p>Explorez, créez et survivez avec les meilleures astuces et mods !</p>
+                <a href="#content" class="btn">Découvrir</a>
+            </div>
         </header>
         
-        <section class="presentation">
-            <h2>Bienvenue sur l'assistant Minecraft</h2>
-            <p>Découvrez les meilleurs ModPacks, astuces et ressources pour améliorer votre expérience de jeu.</p>
-        </section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/Site_NSI/modpack.html">ModPacks Recommandés</a></li>
+                <li><a href="/Site_NSI/astuces.html">Astuces de survie</a></li>
+                <li><a href="https://minecraft.wiki">Wiki Minecraft</a></li>
+            </ul>
+        </nav>
+        
+        <main id="content">
+            <section class="presentation">
+                <h2>Bienvenue sur l'assistant Minecraft</h2>
+                <p>Découvrez les meilleurs ModPacks, astuces et ressources pour améliorer votre expérience de jeu.</p>
+            </section>
+        </main>
         
         <button id="back-to-top">⬆ Retour en haut</button>
         
@@ -29,7 +38,6 @@
         </footer>
         
         <script>
-            // Script pour faire remonter la page
             document.getElementById("back-to-top").addEventListener("click", function() {
                 window.scrollTo({top: 0, behavior: "smooth"});
             });
