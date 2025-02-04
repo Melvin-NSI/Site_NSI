@@ -39,8 +39,8 @@ body {
     left: 0;
     width: 100%;
     height: 20px;
-    background: url('https://www.minecrafttexturepacks.com/wp-content/uploads/2022/04/grass_block.png') no-repeat center/cover;
-    border-bottom: 4px solid #2e7031;
+    background: #8B4513; /* Marron */
+    border-bottom: 4px solid #5A2E0C; /* Un marron plus foncé */
 }
 
 .modpack:hover {
