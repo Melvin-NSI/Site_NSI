@@ -34,6 +34,8 @@
             cursor: pointer;
             font-size: 16px;
         }
+
+        /* Effet au survol des boutons */
         .btn-top:hover, .btn-menu:hover {
             background-color: #45a049;
         }
@@ -58,6 +60,40 @@
         <div class="biome">
             <h2>Biome Désert</h2>
             <img src="Images/desert-minecraft.jpg" alt="Biome Désert">
-            <p>Un vaste
+            <p>Un vaste désert chaud avec des cactus et des temples. L'endroit idéal pour trouver de l'or et des secrets anciens.</p>
+            <a href="https://minecraft.fandom.com/fr/wiki/D%C3%A9sert" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="biome">
+            <h2>Biome Taïga</h2>
+            <img src="Images/taiga-minecraft.jpg" alt="Biome Taïga">
+            <p>Un biome froid rempli de sapins, avec de la neige en hiver. Les loups et les ours y résident souvent.</p>
+            <a href="https://minecraft.fandom.com/fr/wiki/Ta%C3%AFga" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="biome">
+            <h2>Biome Savane</h2>
+            <img src="Images/savane-minecraft.jpg" alt="Biome Savane">
+            <p>Une grande étendue de terres sèches, où l'on trouve des acacias et des villageois. Un paysage de steppe parfait pour l'aventure.</p>
+            <a href="https://minecraft.fandom.com/fr/wiki/Savane" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="biome">
+            <h2>Biome Montagne</h2>
+            <img src="Images/montagne-minecraft.jpg" alt="Biome Montagne">
+            <p>Des montagnes majestueuses et enneigées avec des panoramas à couper le souffle. C'est un lieu difficile d'accès, mais splendide.</p>
+            <a href="https://minecraft.fandom.com/fr/wiki/Montagne" class="btn">En savoir plus</a>
+        </div>
+    </div>
+
+    <!-- Bouton pour revenir en haut -->
+    <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Revenir en haut</button>
+
+    <!-- Bouton pour revenir au menu (au début de la page) -->
+    <button class="btn-menu" onclick="window.location.href = '#';">Revenir au menu</button>
+
+</body>
+</html>
+
 
 
