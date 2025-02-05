@@ -7,36 +7,74 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/Userbox_creeper.svg" type="image/svg+xml">
     <style>
-        .btn-top {
-            position: fixed;
-            bottom: 50px;
-            right: 20px;
+        /* Style général de la page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style pour les biomes */
+        .biome {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .biome img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .biome h2 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
-            border: none;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            text-align: center;
         }
 
-        /* Style pour le bouton de retour au menu */
-        .btn-menu {
-            position: fixed;
-            bottom: 100px;
-            right: 20px;
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Style des boutons fixes en bas */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .btn-top, .btn-menu {
             background-color: #007BFF;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        /* Effet au survol des boutons */
         .btn-top:hover, .btn-menu:hover {
-            background-color: #45a049;
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -84,11 +122,19 @@
             <a href="https://minecraft.fandom.com/fr/wiki/Montagne" class="btn">En savoir plus</a>
         </div>
     </div>
-    <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Revenir en haut</button>
-    <button class="btn-menu" onclick="window.location.href = '#';">Revenir au menu</button>
+
+    <!-- Section pour les boutons en bas -->
+    <div class="btn-container">
+        <!-- Bouton pour revenir en haut -->
+        <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Revenir en haut</button>
+
+        <!-- Bouton pour revenir au menu (au début de la page) -->
+        <button class="btn-menu" onclick="window.location.href = '#';">Revenir au menu</button>
+    </div>
 
 </body>
 </html>
+
 
 
 
