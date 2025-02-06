@@ -21,7 +21,7 @@ function scrollToTop() {
     });
 }
 
-backButton.addEventListener('click', scrollToTop);
+backButton.onclick=function(){location.href="https://melvin-nsi.github.io/Site_NSI/"};
 
 window.onscroll = function() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
