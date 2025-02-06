@@ -4,14 +4,6 @@ backButton.id = 'backButton';
 backButton.style.position = 'fixed';
 backButton.style.top = '10px';
 backButton.style.left = '10px';
-backButton.style.padding = '10px 20px';
-backButton.style.backgroundColor = '#4CAF50';
-backButton.style.color = 'white';
-backButton.style.border = 'none';
-backButton.style.borderRadius = '5px';
-backButton.style.fontSize = '16px';
-backButton.style.cursor = 'pointer';
-backButton.style.display = 'none';
 document.body.appendChild(backButton);
 
 function scrollToTop() {
