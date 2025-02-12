@@ -1,5 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Styles pour Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
 
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    .navbar i {
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+
+    #back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+}
+
+/* Styles généraux */
 body {
     font-family: 'Press Start 2P', cursive;
     background: #808080;
@@ -11,65 +45,26 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    margin: 0;
-    padding: 0;
     height: 100vh;
-}
-
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url('background.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 50px;
-    border-radius: 10px;
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.5em;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    color: white;
-    background: #ff9800;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #e68900;
 }
 
 .navbar {
-    background: #222;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 15px 0;
+    width: 100%;
 }
 
 .navbar ul {
     list-style: none;
+    display: flex;
     padding: 0;
+    margin: 0;
 }
 
 .navbar li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -77,17 +72,13 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    display: flex;
+    align-items: center;
 }
 
-.navbar a:hover {
-    color: #ff9800;
-}
-
-.presentation {
-    text-align: center;
-    padding: 50px;
-    background: #333;
-    color: white;
+.navbar i {
+    font-size: 1.5em;
+    margin-right: 8px;
 }
 
 #back-to-top {
@@ -107,101 +98,17 @@ body {
     background: #e68900;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: white;
-}
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        font-size: 1em;
+    }
 
-.container {
-    width: 80%;
-    padding: 30px;
-    margin: 50px auto;
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 15px;
-    border: 4px solid #5A2E0C;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    text-shadow: 2px 2px 0px #000;
-}
+    .navbar a {
+        font-size: 1em;
+    }
 
-.modpack {
-    position: relative;
-    padding: 40px 20px;
-    margin: 30px 0;
-    border-radius: 10px;
-    border: 4px solid #5A2E0C;
-    background: url('OIP.jpg') no-repeat center/cover;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.modpack::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background: #5A2E0C;
-    border-bottom: 4px solid #3E1E0A;
-}
-
-.modpack:hover {
-    transform: scale(1.05);
-    box-shadow: inset 0 5px 0px #7B3F00, inset 0 -5px 0px #4B2E15, 0px 8px 15px rgba(0, 0, 0, 0.7);
-    background-blend-mode: overlay;
-}
-
-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    border: 4px solid #5A2E0C;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-img:hover {
-    transform: scale(1.08);
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    border: 4px solid #3E1E0A;
-    background: linear-gradient(145deg, #7B3F00, #5A2E0C);
-    box-shadow: 0 4px 0px #3E1E0A;
-    transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 0px #000;
-}
-
-.btn:hover {
-    background: #5A2E0C;
-    box-shadow: 0 6px 0px #3E1E0A;
-    transform: translateY(-2px);
-}
-
-.btn:active {
-    box-shadow: none;
-    transform: translateY(2px);
-}
-
-a {
-    color: #5A2E0C;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-    text-shadow: 2px 2px 0px #000;
-}
-
-a:hover {
-    color: #A0522D;
-    text-decoration: underline;
+    .navbar i {
+        font-size: 1.2em;
+    }
 }
