@@ -38,6 +38,11 @@ body {
     margin-bottom: 10px;
 }
 
+h1 {
+    color: #db9c60;
+}
+
+
 .hero p {
     font-size: 1.5em;
 }
