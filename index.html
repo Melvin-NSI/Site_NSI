@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assistant Minecraft</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="Images/Userbox_creeper.svg" type="image/svg+xml">
-        <link rel="script" href="wikiChanger.js">
-        <style>
-            .navbar {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                background-color: #222;
-                padding: 15px 0;
-            }
-            .navbar ul {
-                list-style: none;
-                display: flex;
-                padding: 0;
-                margin: 0;
-            }
-            .navbar li {
-                margin: 0 15px;
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.2em;
-                display: flex;
-                align-items: center;
-            }
-            .navbar i {
-                font-size: 1.5em;
-                margin-right: 8px;
-            }
-            .full-width-image {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                display: block;
-                margin: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <header class="navbar">
-            <ul>
-                <li><a href="/Site_NSI/modpack.html" title="Découvrez une sélection de ModPacks pour enrichir votre expérience Minecraft"><i class="fas fa-box"></i> ModPacks  </a></li>
-                <li><a href="/Site_NSI/astuces.html" title="Des astuces et conseils pour mieux jouer à Minecraft"><i class="fas fa-lightbulb"></i> Astuces  </a></li>
-                <li><a href="/Site_NSI/biome.html" title="Apprenez tout sur les différents biomes du jeu"><i class="fas fa-book"></i> Biomes  </a></li>
-                <li><a href="https://minecraft.fandom.com/fr/wiki/Minecraft_Wiki" title="Accédez au Wiki Minecraft pour tout savoir sur le jeu"><i class="fas fa-book"></i> Wiki  </a></li>
-            </ul>
-        </header>
-        
-        <main id="content">
-            <section class="presentation">
-                <h1>Bienvenue sur l'assistant Minecraft</h1>
-                <p>Découvrez les meilleurs ModPacks, astuces et ressources pour améliorer votre expérience de jeu.</p>
-            </section>
-        </main>
 
-        <button id="back-to-top">⬆ Retour en haut</button>
-        
-        <script>
-            document.getElementById("back-to-top").addEventListener("click", function() {
-                window.scrollTo({top: 0, behavior: "smooth"});
-            });
-        </script>
-        <footer>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/Userbox_creeper.svg" type="image/svg+xml">
+    <link rel="script" href="wikiChanger.js">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #222;
+            padding: 15px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar i {
+            font-size: 1.5em;
+            margin-right: 8px;
+        }
+
+        .full-width-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <ul>
+            <li><a href="/Site_NSI/modpack.html"
+                    title="Découvrez une sélection de ModPacks pour enrichir votre expérience Minecraft"><i
+                        class="fas fa-box"></i> ModPacks </a></li>
+            <li><a href="/Site_NSI/astuces.html" title="Des astuces et conseils pour mieux jouer à Minecraft"><i
+                        class="fas fa-lightbulb"></i> Astuces </a></li>
+            <li><a href="/Site_NSI/biome.html" title="Apprenez tout sur les différents biomes du jeu"><i
+                        class="fas fa-book"></i> Biomes </a></li>
+            <li><a href="https://minecraft.fandom.com/fr/wiki/Minecraft_Wiki"
+                    title="Accédez au Wiki Minecraft pour tout savoir sur le jeu"><i class="fas fa-book"></i> Wiki </a>
+            </li>
+        </ul>
+    </header>
+
+    <main id="content">
+        <section class="presentation">
+            <h1>Bienvenue sur l'assistant Minecraft</h1>
+            <p>Découvrez les meilleurs ModPacks, astuces et ressources pour améliorer votre expérience de jeu.</p>
+        </section>
+    </main>
+
+    <button id="back-to-top">⬆ Retour en haut</button>
+
+    <script>
+        document.getElementById("back-to-top").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+    <footer>
+    </footer>
+</body>
+
 </html>

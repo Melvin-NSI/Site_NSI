@@ -11,11 +11,13 @@
         p {
             line-height: 1.75em;
         }
+
         ul {
             text-align: left;
         }
     </style>
 </head>
+
 <body>
     <button class="btn" id="home">Retour au menu</button>
     <script src="script.js"></script>
@@ -102,6 +104,12 @@
             des minecarts pour transporter des objets ou te déplacer plus rapidement sur de longues distances.</p>
         <img src="Images/minecart.avif" alt="Image de minecart" style="width: 150px;height: auto;">
     </div>
+    <script>
+        document.querySelectorAll('img').forEach(img => {
+            img.title = img.alt;
+        });
+
+    </script>
 </body>
 
 </html>

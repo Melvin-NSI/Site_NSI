@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const modpacks = document.querySelectorAll(".modpack");
     const scrollTopBtn = document.createElement("button");
     const toggleThemeBtn = document.createElement("button");
@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollTopBtn.classList.add("scroll-top-btn");
     document.body.appendChild(scrollTopBtn);
 
-    scrollTopBtn.addEventListener("click", function() {
+    scrollTopBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
     });
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleThemeBtn.classList.add("toggle-theme-btn");
     document.body.appendChild(toggleThemeBtn);
 
-    toggleThemeBtn.addEventListener("click", function() {
+    toggleThemeBtn.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
         toggleThemeBtn.innerText = document.body.classList.contains("dark-mode") ? "☀ Mode Clair" : "🌙 Mode Sombre";
     });

@@ -4,6 +4,6 @@ backButton.style.top = '10px';
 backButton.style.left = '10px';
 backButton.class = "btn";
 
-backButton.onclick = function(){
+backButton.onclick = function () {
     location.href = "/Site_NSI/";
 };

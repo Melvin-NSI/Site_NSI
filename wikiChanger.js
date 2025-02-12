@@ -3,17 +3,17 @@ function checkAndReplaceBlockedLinks() {
     const alternativeBaseUrl = 'https://minecraft.fandom.com/fr/wiki';
 
     const links = document.querySelectorAll('a');
-    
+
     links.forEach(link => {
         const originalUrl = link.href;
 
         if (originalUrl.includes(targetDomain)) {
             const img = new Image();
-            
-            img.onload = function() {
+
+            img.onload = function () {
             };
-            
-            img.onerror = function() {
+
+            img.onerror = function () {
                 const path = originalUrl.split(targetDomain)[1];
                 const newUrl = alternativeBaseUrl + path;
                 link.href = newUrl;
