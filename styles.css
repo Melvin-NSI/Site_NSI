@@ -83,6 +83,10 @@ body {
     color: #ff9800;
 }
 
+.navbar a:visited {
+    color: #9f33ff;
+}
+
 .presentation {
     text-align: center;
     padding: 50px;
